@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginSignFragment">
+
+    <fragment
+        android:id="@+id/loginSignFragment"
+        android:name="com.example.leanclouddemo.LoginSignFragment"
+        android:label="fragment_login_sign"
+        tools:layout="@layout/fragment_login_sign" >
+        <action
+            android:id="@+id/action_loginSignFragment_to_wordFragment"
+            app:destination="@id/wordFragment"
+            app:popUpTo="@id/loginSignFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.example.leanclouddemo.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" >
+        <action
+            android:id="@+id/action_wordFragment_to_loginSignFragment"
+            app:destination="@id/loginSignFragment"/>
+    </fragment>
+</navigation>
