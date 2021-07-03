@@ -1,0 +1,2 @@
+# LeanCloudDemo
+跟随b站longway777作者最后一集制作，而大佬用的activity，我觉得使用大佬平时教的fragment会更好，单一的activity。但这并不是理想状态，他只是个demo  
